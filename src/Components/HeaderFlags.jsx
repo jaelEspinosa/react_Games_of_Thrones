@@ -1,11 +1,16 @@
 import React from "react";
-
+import spain from "../img/spain.svg";
+import britain from "../img/unitedkingdom.svg";
 
 function HeaderFlags() {
   return (
-    <ul>
-      <li>bandera1</li>
-      <li>bandera2</li>
+    <ul className="gallery">
+      <li>
+        <img src={spain} alt="spain flag" />
+      </li>
+      <li>
+        <img src={britain} alt="english flag" />
+      </li>
     </ul>
   );
 }
