@@ -14,8 +14,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>GAME OF THRONES!!!</h1>
-        <HomePage></HomePage>
+            
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharactersPage />} />
