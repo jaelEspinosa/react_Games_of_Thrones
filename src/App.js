@@ -21,6 +21,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+
         <h1>{t("title")}</h1>
 
         <div>
@@ -32,6 +33,7 @@ function App() {
             {t("translation:en")}
           </button> */}
         </div>
+           
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharactersPage />} />

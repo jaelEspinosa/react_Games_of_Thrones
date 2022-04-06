@@ -1,5 +1,21 @@
 
 
-.titulo{
+.nav{         
     font-family: got;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 36px;
+    background-color: transparent;
+    
+    a{color:whitesmoke;}
+   &-item{margin-bottom: 64px;}
+   
 }
+.title{
+    font-family: got;
+    font-size: 176px;
+    font-weight: normal;
+    
+  }
