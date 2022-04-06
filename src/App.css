@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: got ;
+  src: url('./Fonts/Game_of_Thrones.ttf');
+}
