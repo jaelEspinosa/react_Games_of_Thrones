@@ -1,6 +1,7 @@
 import React from "react";
 import spain from "../img/spain.svg";
 import britain from "../img/unitedkingdom.svg";
+import "./HeaderFind.scss";
 
 function HeaderFlags() {
   return (
