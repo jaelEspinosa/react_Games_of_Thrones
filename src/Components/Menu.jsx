@@ -1,9 +1,11 @@
-import './Menu.scss'
+import "./Menu.scss";
 
-const Menu = ()=>{
-    return <div>
-        <h1 className="titulo">Game Of Thrones</h1>
+const Menu = () => {
+  return (
+    <div>
+      <h1 className="titulo">Game Of Thrones</h1>
     </div>
-}
+  );
+};
 
-export default Menu
+export default Menu;
