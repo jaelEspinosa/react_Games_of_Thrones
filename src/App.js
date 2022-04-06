@@ -1,12 +1,11 @@
 import "./App.css";
-import Menu from "./Components/Menu";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div className="App">
       <h1>GAME OF THRONES!!!</h1>
-
-      <Menu/>
+      <HomePage></HomePage>
     </div>
   );
 }
