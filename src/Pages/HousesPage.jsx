@@ -1,7 +1,12 @@
+
 import React from "react";
 
 function HousesPage() {
-  return <div>HousesPage</div>;
+  return <div>
+ 
+
+
+  </div>;
 }
 
 export default HousesPage;
