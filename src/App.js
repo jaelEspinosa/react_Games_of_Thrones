@@ -9,33 +9,18 @@ import HousesDetailPage from "./Pages/HousesDetailPage";
 import CronologyPage from "./Pages/CronologyPage";
 import { useTranslation } from "react-i18next";
 
-
-
 // import { Navigate, Outlet } from "react-router-dom";
 
 function App() {
   const [isSpanish, setIsSpanish] = useState(true);
   const { t, i18n } = useTranslation(["translation"]);
-  
+
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
   };
   return (
     <Router>
-    
       <div className="App">
-        {/* <h1>{t("title")}</h1> */}
-      
-        <div>
-          {/* <button type="button" onClick={() => changeLanguage("es")}>
-            {t("translation:es")}
-          </button>
-
-          <button type="button" onClick={() => changeLanguage("en")}>
-            {t("translation:en")}
-          </button> */}
-        </div>
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharactersPage />} />
