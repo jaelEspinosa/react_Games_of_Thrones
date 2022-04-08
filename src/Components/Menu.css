@@ -1,0 +1,33 @@
+.nav {
+  font-family: got;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  background-color: transparent;
+  margin-top: 25px;
+}
+
+.nav a {
+  color: whitesmoke;
+}
+
+.nav-item {
+  margin-bottom: 64px;
+}
+
+.title {
+  font-family: got;
+  font-size: 176px;
+  font-weight: normal;
+}
+/*# sourceMappingURL=Menu.css.map */

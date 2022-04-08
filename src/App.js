@@ -10,14 +10,13 @@ import CronologyPage from "./Pages/CronologyPage";
 import { useTranslation } from "react-i18next";
 import { HomeContext } from "./context/HomeContext";
 
-
-
 // import { Navigate, Outlet } from "react-router-dom";
 
 function App() {
   const [isSpanish, setIsSpanish] = useState(true);
   const { t, i18n } = useTranslation(["translation"]);
   const [isHome, setIsHome]=useState(true)
+
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
   };
@@ -25,18 +24,6 @@ function App() {
     <Router>
     <HomeContext.Provider value ={{isHome,setIsHome}}>
       <div className="App">
-        {/* <h1>{t("title")}</h1> */}
-      
-        <div>
-          {/* <button type="button" onClick={() => changeLanguage("es")}>
-            {t("translation:es")}
-          </button>
-
-          <button type="button" onClick={() => changeLanguage("en")}>
-            {t("translation:en")}
-          </button> */}
-        </div>
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/characters" element={<CharactersPage />} />
