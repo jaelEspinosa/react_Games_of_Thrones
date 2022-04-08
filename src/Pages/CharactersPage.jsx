@@ -35,6 +35,5 @@ function CharactersPage() {
       </div>
     </div>
   );
-}
 
 export default CharactersPage;
