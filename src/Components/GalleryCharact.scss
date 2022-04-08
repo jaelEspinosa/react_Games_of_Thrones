@@ -5,4 +5,20 @@
     }
 
 
+.character-name{
+    
+    position:relative;
+    color:transparent;
+    bottom:27px;
+    transition: 1s;
+    font-family: got;
+    font-size: 14px;
+}
 
+.text:hover{
+    transition: 1s;
+    .character-name{
+        color:white;
+        transition: 1s;
+    }
+}   

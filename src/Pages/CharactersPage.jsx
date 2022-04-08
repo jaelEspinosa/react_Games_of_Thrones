@@ -4,6 +4,8 @@ import GalleryCharact from "../Components/GalleryCharact";
 import HeaderFlags from "../Components/HeaderFlags";
 import Menu from "../Components/Menu";
 import './CharactersPage.scss'
+import { ScrollPanel } from 'primereact/scrollpanel'
+
 
 
 function CharactersPage() {
@@ -26,6 +28,7 @@ function CharactersPage() {
          
          <HeaderFlags/>
        </div> 
+       
       <div className="card-contain">
       <div className="chr-contain__item">
      {characters.map((item)=>(
@@ -33,8 +36,10 @@ function CharactersPage() {
      ))}
      </div>
      </div>  
+     
+     
      <div>
-           <Menu />
+          <Menu />     
        </div>
   </div>
 }
