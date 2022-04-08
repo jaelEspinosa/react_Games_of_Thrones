@@ -5,6 +5,7 @@ import HeaderFlags from "../Components/HeaderFlags";
 import Menu from "../Components/Menu";
 import './CharactersPage.scss'
 
+
 function CharactersPage() {
   const[characters, setCharacters]=useState([])
   useEffect(()=>{
@@ -21,7 +22,8 @@ function CharactersPage() {
   
   
   return <div className="chr-contain">
-        <div>
+        <div className="gohome-flasgs-contain">
+         
          <HeaderFlags/>
        </div> 
       <div className="card-contain">
