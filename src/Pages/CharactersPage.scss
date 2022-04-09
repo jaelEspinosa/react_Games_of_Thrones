@@ -20,10 +20,19 @@ height: 100vh;
 }
 
 .card-contain{
+    padding:20px;
     margin:auto;    
     width: 90%;
     max-width: 1980px;
     height: 720px;
     background-color: black;    
     overflow-y: scroll;
+}
+.card-contain::-webkit-scrollbar{
+    width: 5px;
+ 
+}
+.card-contain::-webkit-scrollbar-thumb{
+    background:whitesmoke;
+    border-radius: 10px;
 }

@@ -3,8 +3,10 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import spain from "../img/spain.svg";
 import britain from "../img/unitedkingdom.svg";
+import { Finder } from "./Finder";
 import GoHome from "./GoHome";
 import "./HeaderFind.scss";
+import './Finder.scss'
 
 function HeaderFlags() {
   const { t, i18n } = useTranslation(["translation"]);
@@ -14,6 +16,9 @@ function HeaderFlags() {
 
   return (
     <ul className="gallery">
+      <li className="finder">
+      <Finder/>
+      </li>      
       <li>
         <Link to="/">
           <GoHome />
