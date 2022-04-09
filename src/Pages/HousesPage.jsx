@@ -8,15 +8,15 @@ import "./CharactersPage.scss";
 
 function HousesPage() {
   const [houses, setHouses] = useState([]);
-  const {setIsloading}=useContext(LoadingContext)
+  const { setIsloading } = useContext(LoadingContext);
 
   useEffect(() => {
-    
     const getHouses = async () => {
-      
+      //setIsloading(true);
+      //have a look!!!!
+
       const res = await axios.get("https://api.got.show/api/show/houses");
       setHouses(res.data);
-      
     };
     getHouses();
   }, []);
