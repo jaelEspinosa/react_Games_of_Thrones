@@ -1,0 +1,29 @@
+
+.find-contain{
+  position:absolute;
+  left: 50px;
+  top:10px;
+  width: 300px; 
+  height: 32px;
+  display:flex;
+  border-bottom: 1px solid white;
+  gap:5px;
+  
+
+  
+
+}
+.finder{
+    width: 300px;
+    background-color: black;
+    border:0px;
+    color:white;
+    font-family: got;    
+}
+.finder:focus{
+    outline: none;
+}
+.find-img{
+    width: 21px;
+    height: 21px;
+ }

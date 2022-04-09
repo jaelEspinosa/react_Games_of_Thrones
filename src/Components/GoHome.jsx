@@ -8,8 +8,7 @@ import './GoHome.scss'
 
 const GoHome = ()=>{
     const location = useLocation()
-    console.log('estoy aki',location.pathname)
-    return <div>
+        return <div>
         
       {location.pathname !== '/' ? <img className="home" src = {Group} alt ="home"></img>: null}
     </div>

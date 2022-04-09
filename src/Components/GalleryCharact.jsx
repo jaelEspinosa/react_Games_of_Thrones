@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './GalleryCharact.scss'
 
 
@@ -7,7 +8,7 @@ const GalleryCharact = ({data})=>{
         console.log(data.name)
        <div className='text' >
        
-        {data.image &&  <img className='character' src={data.image} alt={data.actor}></img>}
+        {data.image && <Link to = {`/characters/${data.name}`}> <img className='character' src={data.image} alt={data.actor}></img></Link>}
          <p className='character-name'>{data.name}</p>
        </div>
       
