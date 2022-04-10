@@ -1,12 +1,14 @@
 import { useTranslation } from "react-i18next";
 import React from "react";
 import HeaderFlags from "./HeaderFlags";
+import Goback from "./Goback";
 
 function HousesDetailGallery({ data }) {
   const { t, i18n } = useTranslation(["translation"]);
   return (
     <div className="page">
       <div>
+      <Goback/>
         <HeaderFlags></HeaderFlags>
       </div>
       <div className="container">

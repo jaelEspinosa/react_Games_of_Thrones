@@ -18,10 +18,10 @@ function CharactersDetailPage() {
       );
       console.log(res);
       setChrDetail(res.data);
-      setIsLoading(false);
+      setIsLoading(false); 
     };
     getChrDetail();
-  }, [name]);
+  }, [name]); 
   
   
 

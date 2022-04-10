@@ -34,7 +34,7 @@ function App() {
               <Route path="/cronology" element={<CronologyPage />} />
             </Routes>
           </div>
-        </FindContext.Provider>
+        </FindContext.Provider> 
       </LoadingContext.Provider>
     </Router>
   );

@@ -7,6 +7,7 @@ import { Finder } from "./Finder";
 import GoHome from "./GoHome";
 import "./HeaderFind.scss";
 import './Finder.scss'
+import Goback from "./Goback";
 
 function HeaderFlags() {
   const { t, i18n } = useTranslation(["translation"]);
@@ -18,6 +19,7 @@ function HeaderFlags() {
     <ul className="gallery">
       <li className="finder">
       <Finder/>
+      
       </li>      
       <li>
         <Link to="/">

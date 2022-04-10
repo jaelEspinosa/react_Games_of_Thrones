@@ -3,10 +3,14 @@ import HeaderFlags from "./HeaderFlags";
 import "./ChrDetailGallery.scss";
 import { ScrollPanel } from "primereact/scrollpanel";
 import axios from "axios";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
+import Goback from "./Goback";
 
 
 const ChrDetailGallery = ({ data }) => {
   const [house, setHouse]=useState([])
+  const { t, i18n }=useTranslation(["translation"]);
 
   useEffect(() => {
     const getHouseDetail = async () => {
@@ -14,17 +18,18 @@ const ChrDetailGallery = ({ data }) => {
       const res = await axios.get(
         "https://api.got.show/api/show/houses/"+data.house
       );
-      console.log('la bandera es',res.data[0].logoURL);
+      console.log('la bandera es',res.data[0].logoURL); 
       setHouse(res.data[0].logoURL) 
       
     };
     getHouseDetail();
-  }, []);  
+  }, []);   
   
 
   return (
     <div className="page">
      <div>
+        <Goback/>
         <HeaderFlags />
       </div> 
       <div className="container">
@@ -37,7 +42,7 @@ const ChrDetailGallery = ({ data }) => {
         {data && (
           <article className="article">
             <div className="house">
-              <h4>House</h4>
+              <h4>{t("houses")}</h4>
               <div className="box">
                
          <img className="house-det" src = {house} alt={data.house}></img>
@@ -46,7 +51,7 @@ const ChrDetailGallery = ({ data }) => {
             </div>
 
             <div className="alliances">
-              <h4>Allegiances</h4>
+              <h4>{t("allegiances")}</h4>
               <ScrollPanel style={{ width: "100%", height: "200px" }}>
                 <div className="box">
                   {data.allegiances.map((item) => (
@@ -57,7 +62,7 @@ const ChrDetailGallery = ({ data }) => {
             </div>
 
             <div className="appearances">
-              <h4>Apperances</h4>
+              <h4>{t('appearances')}</h4>
               <div className="box">
                 {data.appearances.map((item) => (
                   <p>{item}</p>
@@ -66,14 +71,14 @@ const ChrDetailGallery = ({ data }) => {
             </div>
 
             <div className="father">
-              <h4>Father</h4>
+              <h4>{t('father')}</h4>
               <div className="box">
                 <p>{data.father}</p>
               </div>
             </div>
 
             <div className="decendents">
-              <h4>Descendents</h4>
+              <h4>{t('related')}</h4>
               <div className="box">
                 {data.siblings.map((item) => (
                   <p>{item}</p>
@@ -82,7 +87,7 @@ const ChrDetailGallery = ({ data }) => {
             </div>
 
             <div className="titles">
-              <h4>titles</h4>
+              <h4>{t('titles')}</h4>
               <div className="box">
                 {data.titles.map((item) => (
                   <p>{item}</p>
