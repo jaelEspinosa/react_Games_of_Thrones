@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./GalleryHouses.scss";
 
 function GalleryHouses({ data }) {
@@ -7,7 +8,9 @@ function GalleryHouses({ data }) {
       {data.logoURL && (
         <>
           <div>
-            <img className="house_image" src={data.logoURL} alt={data.name} />
+            <Link to={`/houses/${data.name}`}>
+              <img className="house_image" src={data.logoURL} alt={data.name} />
+            </Link>
           </div>
           <div>
             <p className="house_title">{data.name}</p>
