@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import React from "react";
 import HeaderFlags from "./HeaderFlags";
+import { Link } from "react-router-dom";
+import GoBack from "./GoBack";
 
 function HousesDetailGallery({ data }) {
   const { t, i18n } = useTranslation(["translation"]);
@@ -8,6 +10,9 @@ function HousesDetailGallery({ data }) {
     <div className="page">
       <div>
         <HeaderFlags></HeaderFlags>
+        <Link to = '/houses'>
+         <GoBack/>
+        </Link>
       </div>
       <div className="container">
         {data && (

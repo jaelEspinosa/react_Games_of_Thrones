@@ -1,0 +1,20 @@
+.vector-contain{
+    position:absolute;
+    left: 50px;
+    top:10px;
+    width: 300px; 
+    height: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    .volver{
+        font-family: got;
+        color:white;
+    }
+  
+    .vector-img{
+        width: 42px;
+        height: 29px;
+    }
+  }

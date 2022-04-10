@@ -10,7 +10,7 @@ const GoHome = ()=>{
     const location = useLocation()
         return <div>
         
-      {location.pathname !== '/' ? <img className="home" src = {Group} alt ="home"></img>: null}
+      {location.pathname === '/characters' || location.pathname === '/houses' ? <img className="home" src = {Group} alt ="home"></img>: null}
     </div>
 }
 
