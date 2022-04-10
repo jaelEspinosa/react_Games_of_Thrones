@@ -3,18 +3,18 @@
   position:absolute;
   left: 120px;
   top:10px;
-  width: 788px; 
+  width: 42vw; 
   height: 32px;
   display:flex;
   border-bottom: 1px solid white;
   gap:5px;
-  
+   
 
   
 
 }
 .finder{
-    width: 300px;
+    width: 25vw;
     background-color: black;
     border:0px;
     color:white;
@@ -27,4 +27,9 @@
 .find-img{
     width: 21px;
     height: 21px;
+ }
+ @media (max-width: 750px){
+     .find-contain{
+         visibility: collapse;
+     }
  }

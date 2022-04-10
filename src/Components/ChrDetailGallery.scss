@@ -70,4 +70,17 @@ font-weight:normal;
 .box::-webkit-scrollbar-thumb{
     background:whitesmoke;
 }
-    
+@media (max-width: 800px){
+  .article{
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}  
+.container{
+    height: 100%;
+}
+.go-back{
+    visibility: hidden;
+}
+
+}    

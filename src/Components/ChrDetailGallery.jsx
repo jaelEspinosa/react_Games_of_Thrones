@@ -33,10 +33,14 @@ const ChrDetailGallery = ({ data }) => {
   return (
     <div className="page">
      <div>
-        <HeaderFlags />
+     <HeaderFlags />
+     <div className="go-back">
+
      <Link to = '/characters'>
-         <GoBack/>
+         <GoBack />
      </Link>   
+     </div>
+      
        
         
       </div> 
