@@ -5,20 +5,22 @@ import HeaderFlags from "../Components/HeaderFlags";
 import Menu from "../Components/Menu";
 import { FindContext } from "../context/FindContext";
 import { LoadingContext } from "../context/LoadingContext";
+
 import "./CharactersPage.scss";
 
 function HousesPage() {
   const [houses, setHouses] = useState([]);
   const [fhouses, setFHouses] = useState([]);
   const { find } = useContext(FindContext);
-  const { setIsloading } = useContext(LoadingContext);
+  const {setIsLoading} = useContext(LoadingContext)
+  
 
   useEffect(() => {
     const getHouses = async () => {
-      // setIsloading(true);
+      setIsLoading(true);
       const res = await axios.get("https://api.got.show/api/show/houses");
       setHouses(res.data);
-      // setIsloading(false);
+      setIsLoading(false);
     };
     getHouses();
   }, []);

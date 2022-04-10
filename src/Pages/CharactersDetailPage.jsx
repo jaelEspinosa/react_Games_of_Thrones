@@ -7,6 +7,7 @@ import { LoadingContext } from "../context/LoadingContext";
 function CharactersDetailPage() {
   const { name } = useParams();
   const [chrDetail, setChrDetail] = useState();
+  
   const { setIsLoading } = useContext(LoadingContext);
 
   useEffect(() => {
@@ -21,6 +22,11 @@ function CharactersDetailPage() {
     };
     getChrDetail();
   }, [name]);
+  
+  
+
+
+
 
   return (
     <div>

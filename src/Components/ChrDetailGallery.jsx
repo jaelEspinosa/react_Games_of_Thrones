@@ -2,42 +2,31 @@ import React, { useEffect, useState } from "react";
 import HeaderFlags from "./HeaderFlags";
 import "./ChrDetailGallery.scss";
 import { ScrollPanel } from "primereact/scrollpanel";
-// import axios from "axios";
-import TestSergi from "./TestSergi";
+import axios from "axios";
+
 
 const ChrDetailGallery = ({ data }) => {
-  //   const [housesDetail, setHousesDetail] = useState();
-  //   useEffect(() => {
-  //     const getHousesDetail = async () => {
-  //       //   setIsLoading(true);
-  //       const res = await axios.get(
-  //         `https://api.got.show/api/show/houses/${data.house}`
-  //       );
-  //       setHousesDetail(res.data[0]);
-  //       //   setIsLoading(false);
-  //       console.log("sergi", res.data[0]);
-  //     };
-  //     getHousesDetail();
-  //   }, [data.name]);
+  const [house, setHouse]=useState([])
 
-  //   console.log("teto", data);
-
-  // export const getHousesDetail = async () => {
-  //   //   setIsLoading(true);
-  //   const res = await axios.get(
-  //     `https://api.got.show/api/show/houses/${data.house}`
-  //   );
-  //   setHousesDetail(res.data[0]);
-  //   //   setIsLoading(false);
-  //   console.log("sergi", res.data[0]);
-  // };
-  // getHousesDetail();
+  useEffect(() => {
+    const getHouseDetail = async () => {
+      
+      const res = await axios.get(
+        "https://api.got.show/api/show/houses/"+data.house
+      );
+      console.log('la bandera es',res.data[0].logoURL);
+      setHouse(res.data[0].logoURL) 
+      
+    };
+    getHouseDetail();
+  }, []);  
+  
 
   return (
     <div className="page">
-      <div>
+     <div>
         <HeaderFlags />
-      </div>
+      </div> 
       <div className="container">
         {data && (
           <figure className="figure">
@@ -50,8 +39,9 @@ const ChrDetailGallery = ({ data }) => {
             <div className="house">
               <h4>House</h4>
               <div className="box">
-                <p>{data.house}</p>
-                {/* <TestSergi data={data.house}></TestSergi> */}
+               
+         <img className="house-det" src = {house} alt={data.house}></img>
+                
               </div>
             </div>
 
