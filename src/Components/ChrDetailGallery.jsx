@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const ChrDetailGallery = ({ data }) => { 
   const [house, setHouse]=useState([])
   const {t, i18n} = useTranslation(["translation"])
-
+ 
 
   useEffect(() => {
     const getHouseDetail = async () => {
