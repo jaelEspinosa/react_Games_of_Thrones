@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 
 
-const ChrDetailGallery = ({ data }) => {
+const ChrDetailGallery = ({ data }) => { 
   const [house, setHouse]=useState([])
   const {t, i18n} = useTranslation(["translation"])
 
@@ -53,7 +53,7 @@ const ChrDetailGallery = ({ data }) => {
               <h4>{t("houses")}</h4>
               <div className="box">
                
-         <img className="house-det" src = {house} alt={data.house}></img>
+      {house &&   <img className="house-det" src = {house} alt={data.house}></img>} 
                 
               </div>
             </div>

@@ -1,9 +1,9 @@
 
 .find-contain{
   position:absolute;
-  left: 50px;
+  left: 120px;
   top:10px;
-  width: 300px; 
+  width: 788px; 
   height: 32px;
   display:flex;
   border-bottom: 1px solid white;
@@ -19,6 +19,7 @@
     border:0px;
     color:white;
     font-family: got;    
+    font-weight: normal;
 }
 .finder:focus{
     outline: none;
