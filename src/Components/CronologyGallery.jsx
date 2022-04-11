@@ -53,7 +53,7 @@ function CronologyGallery({ data }) {
       </div>
       <div className="max-container">
         <div className="timeline-container">
-          <div class="container2">
+          <div className="container2">
             <button onClick={() => handleOrder()} class="my-button"></button>
           </div>
           {!isOrderedAsc &&

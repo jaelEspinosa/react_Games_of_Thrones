@@ -1,6 +1,7 @@
 
 
-.nav{         
+.nav{  
+           
     font-family: got;
     display: flex;
     flex-direction: row;
@@ -8,8 +9,9 @@
     align-items: center;
     font-size: 3vw;
     background-color: transparent;
-    margin-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+  /*   margin-top: 25px; */
+    /* padding-bottom: 25px; */
     
     a{color:whitesmoke;}
    &-item{margin-bottom: 64px;}
