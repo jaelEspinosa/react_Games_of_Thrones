@@ -7,10 +7,6 @@ import "./HomePage.scss";
 function HomePage() {
   const { t, i18n } = useTranslation(["translation"]);
 
-  const changeLanguage = (code) => {
-    i18n.changeLanguage(code);
-  };
-
   return (
     <>
       <div className="contain">

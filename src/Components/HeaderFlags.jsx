@@ -6,7 +6,8 @@ import britain from "../img/unitedkingdom.svg";
 import { Finder } from "./Finder";
 import GoHome from "./GoHome";
 import "./HeaderFind.scss";
-import './Finder.scss'
+import "./Finder.scss";
+import "./HeaderFlags.scss";
 
 function HeaderFlags() {
   const { t, i18n } = useTranslation(["translation"]);
@@ -17,8 +18,8 @@ function HeaderFlags() {
   return (
     <ul className="gallery">
       <li className="finder">
-      <Finder/>
-      </li>      
+        <Finder />
+      </li>
       <li>
         <Link to="/">
           <GoHome />
@@ -26,6 +27,7 @@ function HeaderFlags() {
       </li>
       <li>
         <img
+          className="flag"
           src={spain}
           alt="spain flag"
           onClick={() => changeLanguage("es")}
@@ -33,6 +35,7 @@ function HeaderFlags() {
       </li>
       <li>
         <img
+          className="flag"
           src={britain}
           alt="english flag"
           onClick={() => changeLanguage("en")}

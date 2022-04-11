@@ -8,6 +8,7 @@ function CronologyGallery({ data }) {
   const [orderedAsc, setOrderedAsc] = useState([]);
   const [orderedDesc, setOrderedDesc] = useState([]);
   const [isOrderedAsc, setIsOrderedAsc] = useState(false);
+  const [firstItemAge, setFirstItemAge] = useState(0);
 
   const getOrderedAsc = () => {
     const ordered = data
@@ -16,7 +17,7 @@ function CronologyGallery({ data }) {
 
     setOrderedAsc(ordered);
     setIsOrderedAsc(true);
-    console.log("setOrderedAsc", ordered);
+    setFirstItemAge(ordered[0].age.age);
   };
 
   const getOrderedDesc = () => {
@@ -26,7 +27,7 @@ function CronologyGallery({ data }) {
 
     setOrderedDesc(ordered);
     setIsOrderedAsc(false);
-    console.log("setOrderedDesc", ordered);
+    setFirstItemAge(ordered[0].age.age);
   };
 
   useEffect(() => {
@@ -54,7 +55,9 @@ function CronologyGallery({ data }) {
       <div className="max-container">
         <div className="timeline-container">
           <div className="container2">
-            <button onClick={() => handleOrder()} class="my-button"></button>
+            <button onClick={() => handleOrder()} class="my-button">
+              {firstItemAge}
+            </button>
           </div>
           {!isOrderedAsc &&
             orderedDesc.map((item) => (
