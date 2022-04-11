@@ -10,6 +10,7 @@ import CronologyPage from "./Pages/CronologyPage";
 import { FindContext } from "./context/FindContext";
 import { LoadingContext } from "./context/LoadingContext";
 import Loading from "./Components/Loading";
+import Timeline from "./Components/Timeline";
 
 // import { Navigate, Outlet } from "react-router-dom";
 
@@ -32,6 +33,7 @@ function App() {
               <Route path="/houses" element={<HousesPage />} />
               <Route path="/houses/:name" element={<HousesDetailPage />} />
               <Route path="/cronology" element={<CronologyPage />} />
+              {/* <Route path="/cronology" element={<Timeline />} /> */}
             </Routes>
           </div>
         </FindContext.Provider>
