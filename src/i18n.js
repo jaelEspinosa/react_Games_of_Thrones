@@ -36,6 +36,7 @@ i18n
           region: "REGION",
           words: "CATCHPHRASE",
           fundation: "FUNDATION",
+          volver:"BACK"
         },
       },
       es: {
@@ -57,6 +58,7 @@ i18n
           region: "REGION",
           words: "LEMA",
           fundation: "FUNDACION",
+          volver:"VOLVER"
         },
       },
     },
