@@ -15,7 +15,7 @@ export const Finder = () => {
   setFind(watch('NewFind'))
   return (
     <>
-   {location.pathname=== '/characters' || location.pathname === "/houses"  ? <div className='find-contain'>
+   {location.pathname=== '/characters' || location.pathname === "/houses"  ? <div className='find-contain margin'>
     <img className='find-img' src = {find} alt ='find'></img>
     <input className='finder' type="text" placeholder='buscar'{... register('NewFind')}></input>
          

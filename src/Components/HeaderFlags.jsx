@@ -16,7 +16,7 @@ function HeaderFlags() {
   };
 
   return (
-    <ul className="gallery">
+    <ul className="gallery margin">
       <li className="finder">
         <Finder />
       </li>

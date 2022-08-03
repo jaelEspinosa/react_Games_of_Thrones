@@ -42,7 +42,7 @@ function CharactersPage() {
    
   return (
     <div className="chr-contain">
-      <div className="gohome-flasgs-contain">
+      <div className="gohome-flasgs-contain margin">
         <HeaderFlags />        
       </div>
       <div className="card-contain">
